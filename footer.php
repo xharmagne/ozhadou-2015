@@ -1,3 +1,6 @@
+</div>
+<!-- /wrapper -->
+
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
@@ -11,8 +14,6 @@
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
 
@@ -30,6 +31,13 @@
 		<script>
       $(document).foundation();
 
+			$(document).on("scroll",function(){
+				if($(document).scrollTop()>160){
+					$(".top-bar").addClass("small");
+				} else{
+					$(".top-bar").removeClass("small");
+				}
+			});
     </script>
 
 	</body>

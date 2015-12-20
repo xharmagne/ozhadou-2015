@@ -26,6 +26,8 @@ Version:      	1.0.0
 
 .main-nav {
 	box-shadow: 0px 3px 8px rgba(91,112,146, 0.5);
+	position: fixed;
+	width: 100%;
 }
 
 .title-bar-title {
@@ -69,8 +71,11 @@ Version:      	1.0.0
 	.logo {
 
 		padding: 0.5rem;
+		padding-bottom: 0rem;
+
 		.logo-img {
 			width: 250px;
+			transition: width 0.5s, height 0.5s;
 		}
 	}
 
@@ -94,12 +99,14 @@ Version:      	1.0.0
 		}
 	}
 
+
 	@media #{$medium-up} {
 
 		.main-menu {
 			position: relative;
-			top: -1.25rem;
+			top: -0.75rem;
 			margin-left: 4.5rem;
+			transition: top 0.5s, margin-left 0.5s;
 		}
 
 		.search-box {
@@ -107,6 +114,7 @@ Version:      	1.0.0
 			position: relative;
 			top: 105px;
 			margin-right: 20px;
+			transition: top 0.5s;
 
 			input[type="search"] {
 				width: 70%;
@@ -116,18 +124,37 @@ Version:      	1.0.0
 				width: 30%;
 			}
 		}
+
+
 	}
 }
 
+@media #{$medium-up} {
+
+.top-bar.small {
+	.logo-img {
+		width: 130px;
+	}
+
+	.main-menu {
+		top: -0.25rem;
+		margin-left: 2.2rem;
+	}
+
+	.search-box {
+		top: 58px;
+	}
+}
+}
 
 /********* Content ***********/
 .content-container {
-	padding-top: 1rem;
+	padding-top: 84px; /* offset for fixed nav */
 }
 
 @media #{$medium-up} {
 	.content-container {
-		padding-top: 1.75rem;
+		padding-top: 193px;  /* offset for fixed nav */
 	}
 
 }

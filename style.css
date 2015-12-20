@@ -3472,7 +3472,9 @@ table.hover tr:nth-of-type(even):hover {
 
 /********* Header ***********/
 .main-nav {
-  box-shadow: 0px 3px 8px rgba(91, 112, 146, 0.5); }
+  box-shadow: 0px 3px 8px rgba(91, 112, 146, 0.5);
+  position: fixed;
+  width: 100%; }
 
 .title-bar-title {
   padding: 5px; }
@@ -3503,9 +3505,11 @@ table.hover tr:nth-of-type(even):hover {
   box-shadow: none; }
 
 .top-bar .logo {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  padding-bottom: 0rem; }
   .top-bar .logo .logo-img {
-    width: 250px; }
+    width: 250px;
+    transition: width 0.5s, height 0.5s; }
 
 .top-bar .main-menu {
   text-transform: uppercase;
@@ -3524,25 +3528,38 @@ table.hover tr:nth-of-type(even):hover {
 @media screen and (min-width: 40em) {
   .top-bar .main-menu {
     position: relative;
-    top: -1.25rem;
-    margin-left: 4.5rem; }
+    top: -0.75rem;
+    margin-left: 4.5rem;
+    transition: top 0.5s, margin-left 0.5s; }
   .top-bar .search-box {
     padding: 0;
     position: relative;
     top: 105px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    transition: top 0.5s; }
     .top-bar .search-box input[type="search"] {
       width: 70%; }
     .top-bar .search-box button {
       width: 30%; } }
 
+@media screen and (min-width: 40em) {
+  .top-bar.small .logo-img {
+    width: 150px; }
+  .top-bar.small .main-menu {
+    top: -0.5rem;
+    margin-left: 2.5rem; }
+  .top-bar.small .search-box {
+    top: 60px; } }
+
 /********* Content ***********/
 .content-container {
-  padding-top: 1rem; }
+  padding-top: 84px;
+  /* offset for fixed nav */ }
 
 @media screen and (min-width: 40em) {
   .content-container {
-    padding-top: 1.75rem; } }
+    padding-top: 193px;
+    /* offset for fixed nav */ } }
 
 h1 a, h2 a {
   color: #2199e8; }
