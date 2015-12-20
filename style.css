@@ -3544,17 +3544,18 @@ table.hover tr:nth-of-type(even):hover {
 
 @media screen and (min-width: 40em) {
   .top-bar.small .logo-img {
-    width: 150px; }
+    width: 130px; }
   .top-bar.small .main-menu {
-    top: -0.5rem;
-    margin-left: 2.5rem; }
+    top: -0.25rem;
+    margin-left: 2.2rem; }
   .top-bar.small .search-box {
-    top: 60px; } }
+    top: 58px; } }
 
 /********* Content ***********/
 .content-container {
   padding-top: 84px;
-  /* offset for fixed nav */ }
+  /* offset for fixed nav */
+  padding-bottom: 1.5rem; }
 
 @media screen and (min-width: 40em) {
   .content-container {
@@ -3601,3 +3602,13 @@ article.post {
 
 .pagination a, .pagination button {
   border-radius: 1rem; }
+
+/********* Footer ***********/
+.footer {
+  padding: 0.5rem 1rem;
+  border-top: solid 1px #ddd;
+  font-size: 0.8rem;
+  color: #5b7092;
+  text-align: center; }
+  .footer p {
+    margin-bottom: 0; }

@@ -150,6 +150,7 @@ Version:      	1.0.0
 /********* Content ***********/
 .content-container {
 	padding-top: 84px; /* offset for fixed nav */
+	padding-bottom: 1.5rem;
 }
 
 @media #{$medium-up} {
@@ -212,4 +213,17 @@ article.post {
 
 .pagination a, .pagination button {
 	border-radius: 1rem;
+}
+
+/********* Footer ***********/
+.footer {
+	padding: 0.5rem 1rem;
+	border-top: solid 1px #ddd;
+	font-size: 0.8rem;
+	color: $oh-grey1;
+	text-align: center;
+
+	p {
+		margin-bottom: 0;
+	}
 }
