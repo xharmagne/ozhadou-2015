@@ -18,12 +18,37 @@
 		<!-- /post title -->
 
 		<!-- post details -->
-		<span class="date"><?php the_time('j M'); ?></span>
+		<div class="post-date"><?php the_time('j M'); ?></div>
 		<div class="post-content"><?php the_content(); ?></div>
-		<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<!-- /post details -->
 
-		<?php edit_post_link(); ?>
+		<div class="post-metadata">
+
+			<?php if ( count( get_the_category() ) ) : ?>
+
+				Posted by  <?php the_author_posts_link(); ?> <?php printf( __( 'in %2$s', 'html5blank' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
+
+							<?php edit_post_link(); ?>
+
+			<?php endif; ?>
+
+			<?php
+
+				$tags_list = get_the_tag_list( '<div class="post-tag">','</div><div class="post-tag">','</div>' );
+
+				if ( $tags_list ):
+
+			?>
+
+			<div class="post-tags clearfix">
+				<?php printf( __( '%2$s', 'html5blank' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
+			</div>
+
+
+			<?php endif; ?>
+
+
+		</div>
+		<!-- /post details -->
 
 	</article>
 	<!-- /article -->

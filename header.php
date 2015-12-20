@@ -35,7 +35,7 @@
 				<div class="title-bar" data-responsive-toggle="main-menu-container" data-hide-for="medium">
 				  <div class="title-bar-title">
 						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="OzHadou" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="OzHadou" class="logo-img">
 						</a>
 					</div>
 					<button class="menu-icon hamburger-icon" type="button" data-toggle></button>
@@ -53,10 +53,7 @@
 
 				  </div>
 					<div class="top-bar-right">
-				    <div class="search-box">
-							<input type="search" placeholder="Search" class="float-left">
-				      <button type="button" class="button">Search</button>
-						</div>
+				    	<?php get_template_part('searchform'); ?>
 				  </div>
 				</div>
 				<div style="display:none">

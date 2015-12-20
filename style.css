@@ -1240,12 +1240,12 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  color: #2199e8;
+  color: #38ADCE;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #1585cf; }
+    color: #73A3B7; }
   a img {
     border: 0; }
 
@@ -2156,7 +2156,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #2199e8 transparent transparent;
+    border-color: #38ADCE transparent transparent;
     border-top-style: solid;
     position: absolute;
     top: 0.825rem;
@@ -2167,7 +2167,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #2199e8 transparent transparent;
+    border-color: transparent #38ADCE transparent transparent;
     border-right-style: solid;
     float: left;
     margin-left: 0;
@@ -2178,7 +2178,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #2199e8;
+    border-color: transparent transparent transparent #38ADCE;
     border-left-style: solid; }
   .dropdown.menu .is-dropdown-submenu-parent.is-left-arrow.opens-inner .submenu {
     right: 0;
@@ -3539,3 +3539,48 @@ table.hover tr:nth-of-type(even):hover {
 /********* Content ***********/
 .content-container {
   padding-top: 1rem; }
+
+@media screen and (min-width: 40em) {
+  .content-container {
+    padding-top: 1.75rem; } }
+
+h1 a, h2 a {
+  color: #2199e8; }
+  h1 a:hover, h2 a:hover {
+    color: #1B75BA; }
+
+/********* Article list ***********/
+article.post {
+  margin-bottom: 2rem; }
+
+.post-date {
+  margin-bottom: 1rem;
+  color: #888;
+  text-transform: uppercase; }
+
+.post-metadata {
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  background-color: #ebEEf5; }
+
+.post-tags {
+  margin-top: 0.5rem; }
+
+.post-tag a {
+  float: left;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding: 0.15rem 0.5rem;
+  background-color: #38ADCE;
+  color: white;
+  border-radius: 0.7rem; }
+  .post-tag a:hover {
+    background-color: #73A3B7; }
+
+.page-numbers {
+  border-radius: 1rem;
+  float: left;
+  display: inline-block; }
+
+.pagination a, .pagination button {
+  border-radius: 1rem; }

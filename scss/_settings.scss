@@ -202,7 +202,9 @@
 
 // Colors
 $oh-blue1: #1B75BA;
+$oh-blue2: #2199e8;
 $oh-grey1: #5b7092;
+$oh-grey2: #ebEEf5;
 $oh-red1: #9c0202;
 $oh-red2: #663333;
 $oh-teal1: #38ADCE;
@@ -466,8 +468,8 @@ $titlebar-icon-color-hover: $oh-teal1;
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-// $anchor-color: $primary-color;
-// $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+ $anchor-color: $oh-teal1;
+ $anchor-color-hover: $oh-teal3;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;

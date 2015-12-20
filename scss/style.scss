@@ -124,3 +124,65 @@ Version:      	1.0.0
 .content-container {
 	padding-top: 1rem;
 }
+
+@media #{$medium-up} {
+	.content-container {
+		padding-top: 1.75rem;
+	}
+
+}
+
+h1 a, h2 a {
+
+	color: $oh-blue2;
+
+	&:hover {
+		color: $oh-blue1;
+	}
+}
+
+
+/********* Article list ***********/
+article.post {
+	margin-bottom: 2rem;
+}
+
+.post-date {
+	margin-bottom: 1rem;
+	color: #888;
+	text-transform: uppercase;
+}
+
+.post-metadata {
+	padding: 0.7rem 1rem;
+	border-radius: 1rem;
+	background-color: $oh-grey2;
+}
+
+.post-tags {
+	margin-top: 0.5rem;
+}
+
+.post-tag a {
+	float: left;
+	margin-right: 0.4rem;
+	margin-bottom: 0.4rem;
+	padding: 0.15rem 0.5rem;
+	background-color: $oh-teal1;
+	color: white;
+	border-radius: 0.7rem;
+
+	&:hover {
+		background-color: $oh-teal3;
+	}
+}
+
+.page-numbers {
+	border-radius: 1rem;
+	float: left;
+	display: inline-block;
+}
+
+.pagination a, .pagination button {
+	border-radius: 1rem;
+}
