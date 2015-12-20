@@ -1,0 +1,126 @@
+﻿/*Theme Name:     OzHadou 2015Theme URI:      http://www.ozhadou.net/
+Description:    Child theme for the Boilerplate theme
+Author:         Xharmagne
+Author URI:     http://xharmagne.wordpress.com
+Version:      	1.0.0
+*/
+
+@charset 'utf-8';
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('./fonts/Raleway-Regular.ttf');
+	font-display: fallback;
+}
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-everything;
+@include motion-ui-transitions;
+
+
+
+/********* Header ***********/
+
+.main-nav {
+	box-shadow: 0px 3px 8px rgba(91,112,146, 0.5);
+}
+
+.title-bar-title {
+	padding: 5px;
+	.logo-img {
+		height: 40px;
+	}
+
+}
+
+.title-bar {
+	.hamburger-icon {
+		position: absolute;
+		top: 13px;
+		right: 3px;
+	}
+
+	.menu-icon {
+	  width: 40px;
+	  height: 40px;
+		opacity: 0.9;
+
+		background-size: 100%;
+		background-image: url('./img/button.png');
+	  }
+	.menu-icon:active {
+		background-image: url('./img/button-pressed.png');
+	}
+  .menu-icon::after {
+    background: transparent;
+    box-shadow: none;
+    }
+  .menu-icon:hover::after {
+    background: transparent;
+    box-shadow: none;
+    }
+}
+
+.top-bar {
+
+	.logo {
+
+		padding: 0.5rem;
+		.logo-img {
+			width: 250px;
+		}
+	}
+
+	.main-menu {
+		text-transform: uppercase;
+		letter-spacing: 1.05;
+	}
+
+	.search-box {
+		padding: 0.5rem 1rem;
+
+		input[type="search"] {
+			width: 75%;
+			margin-right: 0;
+		}
+
+		button {
+			width: 25%;
+			border: solid 1px #ccc;
+			border-left: 0;
+		}
+	}
+
+	@media #{$medium-up} {
+
+		.main-menu {
+			position: relative;
+			top: -1.25rem;
+			margin-left: 4.5rem;
+		}
+
+		.search-box {
+			padding: 0;
+			position: relative;
+			top: 105px;
+			margin-right: 20px;
+
+			input[type="search"] {
+				width: 70%;
+			}
+
+			button {
+				width: 30%;
+			}
+		}
+	}
+}
+
+
+/********* Content ***********/
+.content-container {
+	padding-top: 1rem;
+}
