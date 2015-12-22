@@ -24,22 +24,38 @@
 			<!-- /post title -->
 
 			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+			<div class="post-date"><?php the_time('j M'); ?></div>
 			<!-- /post details -->
 
 			<?php the_content(); // Dynamic Content ?>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+			<div class="post-metadata">
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+				<?php if ( count( get_the_category() ) ) : ?>
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+					Posted by  <?php the_author_posts_link(); ?> <?php printf( __( 'in %2$s', 'html5blank' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
 
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+								<?php edit_post_link(); ?>
 
-			<?php comments_template(); ?>
+				<?php endif; ?>
+
+				<?php
+
+					$tags_list = get_the_tag_list( '<div class="post-tag">','</div><div class="post-tag">','</div>' );
+
+					if ( $tags_list ):
+
+				?>
+
+				<div class="post-tags clearfix">
+					<?php printf( __( '%2$s', 'html5blank' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
+				</div>
+
+
+				<?php endif; ?>
+
+
+			</div>
 
 		</article>
 		<!-- /article -->

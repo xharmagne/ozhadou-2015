@@ -34,12 +34,25 @@
 		<script>
       $(document).foundation();
 
+			// Reduce the size of the header on scroll
 			$(document).on("scroll",function(){
 				if($(document).scrollTop()>160){
 					$(".top-bar").addClass("small");
 				} else{
 					$(".top-bar").removeClass("small");
 				}
+			});
+
+			// Style region tags for post titles
+			$(document).ready(function() {
+				$(".post-title a").each(function() {
+					var title = $(this);
+					var titleHtml = title.html();
+					var titleTag = titleHtml.match(/\[\w+\]/);
+					if (titleTag && titleTag.length > 0) {
+						title.html(titleHtml.replace(/\[.+\]/, '<div class="title-tag">'+titleTag+'</div>'));
+					}
+				})
 			});
     </script>
 
