@@ -54,7 +54,8 @@
 				  </div>
 					<div class="top-bar-right">
 						<div class="social-icons">
-							<a class="social-icon" href="https://www.facebook.com/ozhadou">
+
+							<a class="social-icon" href="https://www.facebook.com/ozhadou" target="_blank">
 								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<path d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M20.2,10.7l-1.5,0
@@ -62,7 +63,7 @@
 								</svg>
 
 							</a>
-							<a class="social-icon" href="https://www.twitter.com/ozhadou">
+							<a class="social-icon" href="https://www.twitter.com/ozhadou" target="_blank">
 								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<path d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M22.4,12.7c0,0.1,0,0.3,0,0.4
@@ -72,7 +73,7 @@
 									c0.7-0.1,1.5-0.4,2.1-0.8c-0.2,0.8-0.8,1.4-1.4,1.8c0.7-0.1,1.3-0.3,1.9-0.5C23.6,11.7,23,12.3,22.4,12.7z"/>
 								</svg>
 							</a>
-							<a class="social-icon" href="https://www.youtube.com/ozhadou">
+							<a class="social-icon" href="https://www.youtube.com/ozhadou" target="_blank">
 								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<path d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M24,16.6
