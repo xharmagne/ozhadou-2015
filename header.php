@@ -32,7 +32,7 @@
 		<!-- header and navigation -->
 		<header>
 			<nav class="main-nav" role="navigation">
-				<div class="title-bar" data-responsive-toggle="main-menu-container" data-hide-for="medium">
+				<div class="title-bar" data-responsive-toggle="main-menu-container" data-hide-for="semilarge">
 				  <div class="title-bar-title">
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="OzHadou" class="logo-img">
@@ -41,9 +41,9 @@
 					<button class="menu-icon hamburger-icon" type="button" data-toggle></button>
 				</div>
 
-				<div class="top-bar" id="main-menu-container">
+				<div class="top-bar  stacked-for-medium" id="main-menu-container">
 				  <div class="top-bar-left">
-						<div class="logo  show-for-medium">
+						<div class="logo  show-for-semilarge">
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="OzHadou" class="logo-img">
 							</a>

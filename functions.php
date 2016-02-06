@@ -94,7 +94,7 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul class="main-menu dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">%3$s</ul>',
+		'items_wrap'      => '<ul class="main-menu dropdown vertical semilarge-horizontal menu" data-responsive-menu="drilldown semilarge-dropdown">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => new foundation_walker_nav_menu
 		)
