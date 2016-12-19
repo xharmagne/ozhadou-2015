@@ -10,7 +10,7 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+		<meta name="description" content="OzHadou - Bringing fighting gamers together since 2001">
 
 		<?php wp_head(); ?>
 		<script>
@@ -22,7 +22,6 @@
         });
     </script>
 
-		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/foundation.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/motion-ui.min.js"></script>
 
